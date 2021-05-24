@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Summaryzer</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+</head>
+<body><div class="navbar-fixed">
+   <nav class="grey darken-4" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">Summaryzer</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="{{url_for('index')}}">Home</a></li>
+	<li><a href="{{url_for('use_url')}}">URL</a></li>
+	<li><a href="{{url_for('use_file')}}">Upload File</a></li>
+         <li><a href="{{url_for('compare_summary')}}">Compare Summarizers</a></li>
+	<li><a href="{{url_for('translate_summary')}}">Translator</a></li>
+	<li><a href="{{url_for('help')}}">Help</a></li>
+       <!--  <li><a href="#aboutapp">About</a></li> -->
+      </ul>
+
+      
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+</div>
+	<ul id="nav-mobile" class="sidenav">
+        <li><a href="{{url_for('index')}}">Home</a></li>
+	<li><a href="{{url_for('use_url')}}">URL</a></li>
+	<li><a href="{{url_for('use_file')}}">Upload File</a></li>
+         <li><a href="{{url_for('compare_summary')}}">Compare</a></li>
+	<li><a href="{{url_for('translate_summary')}}">Translator</a></li>
+	<li><a href="{{url_for('help')}}">Help</a></li>
+        <!-- <li><a href="#contactme">About</a></li> -->
+      </ul>
+
+<center><h2> Welcome !</h2> 
+<h6>This is a tool to quickly summarize your text through url or files by condensing it into a shorter version while preserving the salient features.   </h6> </center>
+<br><center>
+<p>This tool also provides analysis features: <br>
+
+1)<b> Estimated Reading Time </b>:It is based on the average reading speed of an adult (roughly 265 words per minute). <br>
+2)<b>Length of text</b>: You can easily view the length of input textand the resultant summary. </center>
+
+
+<p><b> Compare Summarizers: </b> Makes use of several methods to summarize text such as: <br>
+1.	SpaCy Summarizer: spaCy is a open-source advanced natural language processing library.It helps in applications that process and understand large volumes of text. It can be used to build information extraction or natural language understanding systems, or to pre-process text for deep learning. 
+<br>
+
+2.	 Text Rank summarizer:This algorithm is based from Google's Page Rank algorithm.is a graph-based ranking model for text processing which can be used in order to find the most relevant sentences in text and to find keywords. 
+<br>
+3.	NLTK Summarizer: The Natural Language Toolkit (NLTK) is a platform used for building Python programs that work with human language data for applying in statistical natural language processing. It contains text processing libraries for tokenization, parsing, classification, stemming, tagging and semantic reasoning.
+<br>
+4.	LexRank Summarizer: LexRank is an unsupervised graph-based approach for automatic text summarization. It is used for computing sentence importance based on the concept of eigenvector centrality in a graph representation of sentences.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+<footer class="page-footer grey darken-4">
+    <div class="container" id="aboutapp">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">About Summary App</h5>
+          <p class="grey-text text-lighten-4">Using Spacy,NLTk, Text Rank and Lex Rank methods for Text Summarization.Also provides a Translator and Comparison of Methods functionality</p> </div>
+      
+
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="white-text text-lighten-3" >Uttara Dafle,Riya Sankhe and Christina Shah</a><br/>
+     
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="static/js/materialize.js"></script>
+  <script src="static/js/init.js"></script>
+
+  </body>
+</html>
